@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SoPeixeApp - O melhor app para amantes de peixes e aquarismo">
+    <title>SoPeixeApp - Para Peixívoros</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header .tagline {
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 20px 0;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        .app-icon {
+            text-align: center;
+            font-size: 120px;
+            margin: 20px 0;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature {
+            padding: 30px;
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            color: white;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐠 SoPeixeApp</h1>
+            <p class="tagline">O aplicativo definitivo para peixívoros e amantes do aquarismo</p>
+        </header>
+
+        <div class="main-content">
+            <div class="app-icon">🐟</div>
+            
+            <h2 style="text-align: center; color: #667eea; margin-bottom: 30px;">
+                Bem-vindo ao SoPeixeApp!
+            </h2>
+            
+            <p style="text-align: center; font-size: 1.2em; margin-bottom: 40px; color: #666;">
+                Descubra, aprenda e compartilhe tudo sobre peixes e aquarismo. 
+                Seja você um iniciante ou um aquarista experiente, temos tudo o que você precisa!
+            </p>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📚</div>
+                    <h3>Enciclopédia de Peixes</h3>
+                    <p>Acesse informações detalhadas sobre centenas de espécies de peixes, seus hábitats e cuidados necessários.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Guia de Aquários</h3>
+                    <p>Aprenda a montar e manter aquários perfeitos, desde equipamentos até decoração.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">💧</div>
+                    <h3>Monitor de Qualidade</h3>
+                    <p>Acompanhe parâmetros da água como pH, temperatura e níveis de amônia para manter seus peixes saudáveis.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">📅</div>
+                    <h3>Lembretes e Tarefas</h3>
+                    <p>Receba notificações para alimentação, limpeza do aquário e troca de água.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">👥</div>
+                    <h3>Comunidade</h3>
+                    <p>Conecte-se com outros aquaristas, compartilhe experiências e tire dúvidas.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">📸</div>
+                    <h3>Galeria de Fotos</h3>
+                    <p>Mostre seus peixes e aquários para o mundo e inspire outros entusiastas.</p>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Baixe agora e comece sua jornada aquática!</h2>
+                <p style="margin-bottom: 20px;">Disponível para iOS e Android</p>
+                <div class="download-buttons">
+                    <a href="#" class="btn">📱 App Store</a>
+                    <a href="#" class="btn">🤖 Google Play</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 SoPeixeApp. Todos os direitos reservados.</p>
+            <p>
+                <a href="politica-de-privacidade.html">Política de Privacidade</a>
+                <a href="mailto:contato@sopeixeapp.com">Contato</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
